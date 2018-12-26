@@ -15,3 +15,9 @@ and finally the team that we choosed from previous step will showed up at very f
 ![rx3](https://user-images.githubusercontent.com/34839080/50446143-91bdfd00-0928-11e9-93c7-0d94dde5c1b5.png)
 
 Hope You Guys Enjoy it 😉😉
+
+## Requirements
+Swift 4.2.1 or later
+
+## Author
+sahandraeisi1994@gmail.com, sahandraeisi@yahoo.com
