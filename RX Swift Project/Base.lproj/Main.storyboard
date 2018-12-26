@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--RX-->
+        <!--RX Example-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RX_Swift_Project" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,15 +36,15 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMc-dd-qHw">
-                                <rect key="frame" x="141.5" y="568" width="92" height="35"/>
+                                <rect key="frame" x="133.5" y="568" width="108" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
-                                <state key="normal" title="Select Car"/>
+                                <state key="normal" title="Select a Car"/>
                                 <connections>
                                     <action selector="selectCarPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kGN-qO-FOm"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Bpr-fM-ugy" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="4Uh-pa-AWY"/>
                             <constraint firstItem="Bpr-fM-ugy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="H2g-lK-DNl"/>
@@ -55,7 +55,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="RX" id="UnM-F5-slG"/>
+                    <navigationItem key="navigationItem" title="RX Example" id="UnM-F5-slG"/>
                     <connections>
                         <outlet property="imageView" destination="f6p-iP-elp" id="Eqg-an-acr"/>
                         <outlet property="label" destination="J8P-NF-r0Z" id="b7c-ih-aMQ"/>
@@ -132,7 +132,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nKl-i3-xEe" firstAttribute="top" secondItem="aOf-g4-5KC" secondAttribute="top" constant="32" id="5n6-iS-8nE"/>
                             <constraint firstItem="nKl-i3-xEe" firstAttribute="centerX" secondItem="O8G-Aw-M9I" secondAttribute="centerX" id="6A1-Z6-keB"/>
@@ -151,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eOg-iW-zXh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2292" y="128"/>
+            <point key="canvasLocation" x="1753" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cxJ-C3-V2F">
@@ -173,7 +173,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Ferrari" width="1200" height="525"/>
+        <image name="Ferrari" width="465" height="138"/>
         <image name="Mercedes" width="1000" height="214"/>
         <image name="Redbull" width="465" height="138"/>
         <image name="f1" width="1200" height="900"/>

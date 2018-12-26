@@ -33,7 +33,7 @@ class ViewController: UIViewController {
             
             DispatchQueue.main.async {
                 self.imageView.image = self.carObject?.image
-                self.label.text = self.carObject?.name
+                self.label.text = "Go \(self.carObject?.name ?? "Formula 1") yeaaahhhh!!!!"
             }
         }).disposed(by: dispodeBag)
         
