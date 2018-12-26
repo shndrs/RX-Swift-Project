@@ -13,7 +13,7 @@ class SecondViewController: UIViewController {
     
     private let selectedCarVariable = Variable(Car(image: UIImage(named: "f1")!,
                                                    name: "Formula One"))
-    var selectedCar:Observable<Car> {
+    public var selectedCar:Observable<Car> {
         return selectedCarVariable.asObservable()
     }
     

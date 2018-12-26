@@ -39,6 +39,9 @@
                                 <rect key="frame" x="141.5" y="568" width="92" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
                                 <state key="normal" title="Select Car"/>
+                                <connections>
+                                    <action selector="selectCarPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kGN-qO-FOm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -53,6 +56,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="RX" id="UnM-F5-slG"/>
+                    <connections>
+                        <outlet property="imageView" destination="f6p-iP-elp" id="Eqg-an-acr"/>
+                        <outlet property="label" destination="J8P-NF-r0Z" id="b7c-ih-aMQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
