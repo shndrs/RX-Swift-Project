@@ -10,12 +10,25 @@ import UIKit
 import RxSwift
 
 class ViewController: UIViewController {
+    
+    private let secondVCId = "SecondViewController"
+    
+    @IBOutlet fileprivate weak var imageView:UIImage!
+    @IBOutlet fileprivate weak var label:UILabel!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    
+    @IBAction private func selectCarPressed(_ sender: UIButton) {
+        
+        guard let secondVC = storyboard?.instantiateViewController(withIdentifier: secondVCId) else { return }
+        navigationController?.pushViewController(secondVC, animated: true)
+        
+    }
+    
+    
 }
 
