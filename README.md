@@ -2,22 +2,31 @@
 This project show us how we can pass Objects between ViewControllers with RxSwift...Very exciting sample for learning RX
 okey lets see what's going on, on this project, shall we ?
 
-First of all we should select a Car:
+First of all we should login to the app:
 
-![rx1](https://user-images.githubusercontent.com/34839080/50446138-8c60b280-0928-11e9-9fbc-b4c592a2cb40.png)
+![login](https://user-images.githubusercontent.com/34839080/50735014-19bfc480-11bd-11e9-8cac-fd739d9d7af4.png)
+
+Go and pick your car by pressing Select a Car:
+
+![firstvc](https://user-images.githubusercontent.com/34839080/50735016-1d534b80-11bd-11e9-8a4c-7aa9845b473d.png)
 
 Then we select the car that we want and press Back Button or RX Example if you wanna act very precisely 😅😅:
 
-![rx2](https://user-images.githubusercontent.com/34839080/50446142-8f5ba300-0928-11e9-9010-ad4750915977.png)
+![your beast](https://user-images.githubusercontent.com/34839080/50735018-204e3c00-11bd-11e9-81a8-fedecd38ac02.png)
 
 and finally the team that we choosed from previous step will showed up at very first ViewController( obviously you wanna choose Ferrari 😁😁)
 
-![rx3](https://user-images.githubusercontent.com/34839080/50446143-91bdfd00-0928-11e9-93c7-0d94dde5c1b5.png)
+![goback](https://user-images.githubusercontent.com/34839080/50735019-2217ff80-11bd-11e9-8a8a-bf4137c149e0.png)
 
 Hope You Guys Enjoy it 😉😉
 
 ## Requirements
+Xcode 10.1
 Swift 4.2.1 or later
 
 ## Author
 sahandraeisi1994@gmail.com, sahandraeisi@yahoo.com
+
+
+
+
