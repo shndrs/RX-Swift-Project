@@ -69,11 +69,11 @@
 		2F95E40A21D38BAB00342F14 /* RX Swift Project */ = {
 			isa = PBXGroup;
 			children = (
+				2F987BB821E1E4F300BF8A44 /* Resources */,
 				2F987BB721E1E48D00BF8A44 /* Model */,
 				2F987BB621E1E46F00BF8A44 /* View */,
 				2F987BB321E1E0FA00BF8A44 /* ViewModel */,
 				2F95E40B21D38BAB00342F14 /* AppDelegate.swift */,
-				2F95E41221D38BAD00342F14 /* Assets.xcassets */,
 				2F95E41721D38BAD00342F14 /* Info.plist */,
 			);
 			path = "RX Swift Project";
@@ -105,6 +105,14 @@
 				2F95E41F21D3A23100342F14 /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2F987BB821E1E4F300BF8A44 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2F95E41221D38BAD00342F14 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		72CC53A21A39A9D4C6640DE9 /* Frameworks */ = {

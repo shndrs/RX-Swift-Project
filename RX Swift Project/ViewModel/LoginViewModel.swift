@@ -9,12 +9,12 @@
 import Foundation
 import RxSwift
 
-class LoginViewModel {
-    var email = Variable<String>("")
-    var password = Variable<String>("")
+public struct LoginViewModel {
     
+    public var email = Variable<String>("")
+    public var password = Variable<String>("")
     
-    var isValid: Observable<Bool> {
+    public var isValid: Observable<Bool> {
         return Observable.combineLatest(email.asObservable(), password.asObservable()) { email, password in
             email == "sahandraeisi1994@gmail.com" && password == "shndrs"
         }
