@@ -9,15 +9,19 @@
 import UIKit
 import RxSwift
 
-class LoginViewController: UIViewController {
 
-    @IBOutlet var userNameTF: UITextField!
-    @IBOutlet var passwordTF: UITextField!
-    @IBOutlet var alarmLabel: UILabel!
+class LoginViewController: UIViewController {
+    
+    var loginViewModel = LoginViewModel()
+
+    @IBOutlet weak var userNameTF: UITextField!
+    @IBOutlet weak var passwordTF: UITextField!
+    @IBOutlet weak var alarmLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         
     }
     
