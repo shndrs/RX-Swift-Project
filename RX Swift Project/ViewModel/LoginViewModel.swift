@@ -26,10 +26,4 @@ public struct LoginViewModel {
         }
     }
     
-    public var userIsValid: Observable<Bool> {
-        return Observable.combineLatest(username.asObservable(), password.asObservable()) { username, password in
-            username == "shndrs@gmail.com" && password == "shndrs"
-        }
-    }
-    
 }

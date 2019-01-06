@@ -14,7 +14,9 @@ class LoginViewController: UIViewController {
     
     private let loginViewModel = LoginViewModel()
     private let dispodeBag = DisposeBag()
-
+    private var usernameIsValidNow = false
+    private var passwordIsValidNow = false
+    
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var usernameAlarmLabel: UILabel!
@@ -31,7 +33,6 @@ class LoginViewController: UIViewController {
         super.viewWillAppear(animated)
         userNameTF.text = nil
         passwordTF.text = nil
-        
         userNameTF.becomeFirstResponder()
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
@@ -42,19 +43,15 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction private func loginButtonPressed(_ sender: UIButton) {
-        loginViewModel.userIsValid.subscribe(onNext: {[unowned self] isValid in
-            
-            if isValid {
+        if usernameIsValidNow && passwordIsValidNow {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
                 guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController else { return }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: { [weak self] in
-                    guard let self = self else { return }
-                    self.navigationController?.pushViewController(vc, animated: true)
-                })
-            }
-        }).disposed(by: dispodeBag)
+                self.navigationController?.pushViewController(vc, animated: true)
+            })
+        }
     }
     
-    func loginValidation() {
+    private func loginValidation() {
         
         _ = userNameTF.rx.text.map { $0 ?? "" }.bind(to: loginViewModel.username)
         _ = passwordTF.rx.text.map { $0 ?? "" }.bind(to: loginViewModel.password)
@@ -66,6 +63,7 @@ class LoginViewController: UIViewController {
             
             self.usernameAlarmLabel.text = isValid ? "Username is correct" : "Try Again!"
             self.usernameAlarmLabel.textColor = isValid ? .green : .lightGray
+            self.usernameIsValidNow = isValid
             
         }).disposed(by: dispodeBag)
         
@@ -73,6 +71,7 @@ class LoginViewController: UIViewController {
             
             self.passwordAlarmLabel.text = isValid ? "Password is correct" : "Try Again!"
             self.passwordAlarmLabel.textColor = isValid ? .green : .lightGray
+            self.passwordIsValidNow = isValid
             
         }).disposed(by: dispodeBag)
     }

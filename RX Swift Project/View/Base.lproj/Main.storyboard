@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--RX Example-->
+        <!--Formula One RX-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="RX_Swift_Project" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f1 Login copy" translatesAutoresizingMaskIntoConstraints="NO" id="4cP-Iv-PJV">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a648ce94-5d5f-43a8-ba3a-358561cae870" translatesAutoresizingMaskIntoConstraints="NO" id="4cP-Iv-PJV">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lje-31-qq2">
@@ -35,13 +35,13 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f1" translatesAutoresizingMaskIntoConstraints="NO" id="f6p-iP-elp">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="223.33333333333334"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Formula 1 Nerd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8P-NF-r0Z">
-                                        <rect key="frame" x="91" y="223.33333333333337" width="118" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go Formula 1 yeaaahhhh!!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8P-NF-r0Z">
+                                        <rect key="frame" x="45.333333333333343" y="223.33333333333337" width="209" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="vW1-le-m2C"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -76,7 +76,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="RX Example" id="UnM-F5-slG"/>
+                    <navigationItem key="navigationItem" title="Formula One RX" id="UnM-F5-slG"/>
                     <connections>
                         <outlet property="imageView" destination="f6p-iP-elp" id="Eqg-an-acr"/>
                         <outlet property="label" destination="J8P-NF-r0Z" id="b7c-ih-aMQ"/>
@@ -94,6 +94,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fernando" translatesAutoresizingMaskIntoConstraints="NO" id="zkE-XF-djD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLn-bA-2cy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rHh-Bm-T2M">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="zvx-vc-J6n">
                                 <rect key="frame" x="16" y="158" width="165" height="456"/>
                                 <subviews>
@@ -149,21 +160,29 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which Car Do You Prefer?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKl-i3-xEe">
                                 <rect key="frame" x="85.333333333333329" y="119.99999999999999" width="204.33333333333337" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="lLn-bA-2cy" secondAttribute="bottom" id="3Ep-RD-9yU"/>
                             <constraint firstItem="aOf-g4-5KC" firstAttribute="trailing" secondItem="uW0-KK-ul1" secondAttribute="trailing" constant="32" id="44s-7k-2xT"/>
+                            <constraint firstItem="zkE-XF-djD" firstAttribute="leading" secondItem="aOf-g4-5KC" secondAttribute="leading" id="4V5-aV-e4N"/>
+                            <constraint firstItem="lLn-bA-2cy" firstAttribute="top" secondItem="O8G-Aw-M9I" secondAttribute="top" id="5Jy-Nx-5JS"/>
                             <constraint firstItem="nKl-i3-xEe" firstAttribute="top" secondItem="aOf-g4-5KC" secondAttribute="top" constant="32" id="5n6-iS-8nE"/>
                             <constraint firstItem="nKl-i3-xEe" firstAttribute="centerX" secondItem="O8G-Aw-M9I" secondAttribute="centerX" id="6A1-Z6-keB"/>
                             <constraint firstItem="aOf-g4-5KC" firstAttribute="trailing" secondItem="ewO-sI-Fkm" secondAttribute="trailing" constant="32" id="DC2-tB-P5T"/>
+                            <constraint firstItem="lLn-bA-2cy" firstAttribute="leading" secondItem="aOf-g4-5KC" secondAttribute="leading" id="DIK-Xw-2vk"/>
+                            <constraint firstItem="zkE-XF-djD" firstAttribute="trailing" secondItem="aOf-g4-5KC" secondAttribute="trailing" id="FQ0-XA-zqF"/>
                             <constraint firstItem="zvx-vc-J6n" firstAttribute="top" secondItem="aOf-g4-5KC" secondAttribute="top" constant="70" id="KS9-qv-g27"/>
                             <constraint firstItem="aOf-g4-5KC" firstAttribute="trailing" secondItem="770-Us-Kev" secondAttribute="trailing" constant="32" id="Qb9-ef-BLF"/>
+                            <constraint firstItem="lLn-bA-2cy" firstAttribute="trailing" secondItem="aOf-g4-5KC" secondAttribute="trailing" id="RSC-bc-i2I"/>
                             <constraint firstItem="uW0-KK-ul1" firstAttribute="centerY" secondItem="uvv-9Y-TFK" secondAttribute="centerY" id="Ryl-8p-it6"/>
+                            <constraint firstItem="zkE-XF-djD" firstAttribute="top" secondItem="O8G-Aw-M9I" secondAttribute="top" id="SGe-ym-7Rg"/>
                             <constraint firstItem="zvx-vc-J6n" firstAttribute="leading" secondItem="aOf-g4-5KC" secondAttribute="leading" constant="16" id="X69-XJ-Oe3"/>
                             <constraint firstItem="ewO-sI-Fkm" firstAttribute="centerY" secondItem="XHk-JD-ixc" secondAttribute="centerY" id="Xeg-Sm-vie"/>
+                            <constraint firstAttribute="bottom" secondItem="zkE-XF-djD" secondAttribute="bottom" id="ri8-xx-QdI"/>
                             <constraint firstItem="770-Us-Kev" firstAttribute="centerY" secondItem="yhR-OE-OFN" secondAttribute="centerY" id="tqU-Sb-IaV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aOf-g4-5KC"/>
@@ -172,9 +191,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eOg-iW-zXh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2622" y="132"/>
+            <point key="canvasLocation" x="2621.5999999999999" y="131.52709359605913"/>
         </scene>
-        <!--Formula One RX-->
+        <!--Formula One RX Login-->
         <scene sceneID="chv-Ke-NRR">
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" id="7ZQ-jE-gtj" customClass="LoginViewController" customModule="RX_Swift_Project" customModuleProvider="target" sceneMemberID="viewController">
@@ -182,7 +201,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f1 Login copy" translatesAutoresizingMaskIntoConstraints="NO" id="G0Y-p1-dHh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a648ce94-5d5f-43a8-ba3a-358561cae870" translatesAutoresizingMaskIntoConstraints="NO" id="G0Y-p1-dHh">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSQ-BI-gpv">
@@ -238,13 +257,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wwerwer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XC3-hV-WAc">
                                 <rect key="frame" x="157.33333333333334" y="570" width="60.333333333333343" height="17.666666666666629"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" red="0.97818644659999998" green="0.2395347253" blue="0.35358815510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wwerwer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMl-LS-vx0">
                                 <rect key="frame" x="157.33333333333334" y="595.66666666666663" width="60.333333333333343" height="17.666666666666629"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" red="0.97818644659999998" green="0.2395347253" blue="0.35358815510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -275,7 +294,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gBK-LZ-jgy"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Formula One RX" id="O09-kn-BLJ"/>
+                    <navigationItem key="navigationItem" title="Formula One RX Login" id="O09-kn-BLJ"/>
                     <connections>
                         <outlet property="loginButton" destination="oP3-q8-ZXS" id="ePG-Sa-wTe"/>
                         <outlet property="passwordAlarmLabel" destination="UMl-LS-vx0" id="VFs-Qg-gRc"/>
@@ -286,7 +305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4up-m7-Waa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1116" y="132.26600985221674"/>
+            <point key="canvasLocation" x="977" y="132"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jZQ-mI-xbg">
@@ -312,7 +331,8 @@
         <image name="Ferrari" width="465" height="138"/>
         <image name="Mercedes" width="1000" height="214"/>
         <image name="Redbull" width="465" height="138"/>
+        <image name="a648ce94-5d5f-43a8-ba3a-358561cae870" width="1024" height="680"/>
         <image name="f1" width="1200" height="900"/>
-        <image name="f1 Login copy" width="1050" height="1680"/>
+        <image name="fernando" width="804" height="1280"/>
     </resources>
 </document>
