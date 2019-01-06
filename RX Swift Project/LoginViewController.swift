@@ -7,14 +7,22 @@
 //
 
 import UIKit
+import RxSwift
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet var userNameTF: UITextField!
+    @IBOutlet var passwordTF: UITextField!
+    @IBOutlet var alarmLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
     }
+    
+    
+    
     
 
 }
