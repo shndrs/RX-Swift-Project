@@ -14,6 +14,7 @@
 		2F95E41621D38BAD00342F14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F95E41421D38BAD00342F14 /* LaunchScreen.storyboard */; };
 		2F95E41E21D38D6B00342F14 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95E41D21D38D6B00342F14 /* SecondViewController.swift */; };
 		2F95E42021D3A23100342F14 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95E41F21D3A23100342F14 /* Model.swift */; };
+		2F987BAF21E1DBA800BF8A44 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F987BAE21E1DBA800BF8A44 /* LoginViewController.swift */; };
 		DF8B9A54541D4F2F1A024D86 /* Pods_RX_Swift_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220C2FBC831FB13207EF5FEB /* Pods_RX_Swift_Project.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		2F95E41721D38BAD00342F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F95E41D21D38D6B00342F14 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		2F95E41F21D3A23100342F14 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2F987BAE21E1DBA800BF8A44 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		48EEA7DC155E211385FB6C0B /* Pods-RX Swift Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RX Swift Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RX Swift Project/Pods-RX Swift Project.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 				2F95E41221D38BAD00342F14 /* Assets.xcassets */,
 				2F95E41421D38BAD00342F14 /* LaunchScreen.storyboard */,
 				2F95E41721D38BAD00342F14 /* Info.plist */,
+				2F987BAE21E1DBA800BF8A44 /* LoginViewController.swift */,
 			);
 			path = "RX Swift Project";
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				2F95E41E21D38D6B00342F14 /* SecondViewController.swift in Sources */,
 				2F95E40E21D38BAB00342F14 /* ViewController.swift in Sources */,
 				2F95E40C21D38BAB00342F14 /* AppDelegate.swift in Sources */,
+				2F987BAF21E1DBA800BF8A44 /* LoginViewController.swift in Sources */,
 				2F95E42021D3A23100342F14 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

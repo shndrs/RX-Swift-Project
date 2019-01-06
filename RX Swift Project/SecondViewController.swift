@@ -26,7 +26,5 @@ class SecondViewController: UIViewController {
         guard let titleStr = sender.titleLabel?.text else { return }
         let carObject = Car(image: UIImage(named: titleStr)!, name: titleStr)
         selectedCarVariable.value = carObject
-    }
-    
+    }    
 }
-
