@@ -11,12 +11,24 @@ import RxSwift
 
 public struct LoginViewModel {
     
-    public var email = Variable<String>("")
+    public var username = Variable<String>("")
     public var password = Variable<String>("")
     
-    public var isValid: Observable<Bool> {
-        return Observable.combineLatest(email.asObservable(), password.asObservable()) { email, password in
-            email == "sahandraeisi1994@gmail.com" && password == "shndrs"
+    public var usernameIsValid: Observable<Bool> {
+        return Observable.combineLatest(username.asObservable(), password.asObservable()) { username, password in
+            username == "shndrs@gmail.com"
+        }
+    }
+    
+    public var passwordIsValid: Observable<Bool> {
+        return Observable.combineLatest(password.asObservable(), password.asObservable()) { username, password in
+            password == "shndrs"
+        }
+    }
+    
+    public var userIsValid: Observable<Bool> {
+        return Observable.combineLatest(username.asObservable(), password.asObservable()) { username, password in
+            username == "shndrs@gmail.com" && password == "shndrs"
         }
     }
     

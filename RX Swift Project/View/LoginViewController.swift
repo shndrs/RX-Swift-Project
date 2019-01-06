@@ -17,7 +17,8 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
-    @IBOutlet weak var alarmLabel: UILabel!
+    @IBOutlet weak var usernameAlarmLabel: UILabel!
+    @IBOutlet weak var passwordAlarmLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
@@ -28,38 +29,52 @@ class LoginViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        userNameTF.text = nil
+        passwordTF.text = nil
         
+        userNameTF.becomeFirstResponder()
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        
         navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    @IBAction private func loginButtonPressed(_ sender: UIButton) {
+        loginViewModel.userIsValid.subscribe(onNext: {[unowned self] isValid in
+            
+            if isValid {
+                guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController else { return }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: { [weak self] in
+                    guard let self = self else { return }
+                    self.navigationController?.pushViewController(vc, animated: true)
+                })
+            }
+        }).disposed(by: dispodeBag)
     }
     
     func loginValidation() {
         
-        _ = userNameTF.rx.text.map { $0 ?? "" }.bind(to: loginViewModel.email)
+        _ = userNameTF.rx.text.map { $0 ?? "" }.bind(to: loginViewModel.username)
         _ = passwordTF.rx.text.map { $0 ?? "" }.bind(to: loginViewModel.password)
-        _ = loginViewModel.isValid.bind(to: loginButton.rx.isEnabled)
         
-        loginViewModel.isValid.subscribe(onNext: {[unowned self] isValid in
+        _ = loginViewModel.usernameIsValid.bind(to: loginButton.rx.isEnabled)
+        _ = loginViewModel.passwordIsValid.bind(to: loginButton.rx.isEnabled)
+        
+        loginViewModel.usernameIsValid.subscribe(onNext: {[unowned self] isValid in
             
-            self.alarmLabel.text = isValid ? "You're good to go in 2 seconds" : "Try again"
-            self.alarmLabel.textColor = isValid ? .green : .red
+            self.usernameAlarmLabel.text = isValid ? "Username is correct" : "Try Again!"
+            self.usernameAlarmLabel.textColor = isValid ? .green : .lightGray
             
-            if isValid {
-                
-                guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController else { return }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: { [weak self] in
-                    
-                    guard let self = self else { return }
-                    
-                    self.navigationController?.pushViewController(vc, animated: true)
-                })
-            }
+        }).disposed(by: dispodeBag)
+        
+        loginViewModel.passwordIsValid.subscribe(onNext: {[unowned self] isValid in
+            
+            self.passwordAlarmLabel.text = isValid ? "Password is correct" : "Try Again!"
+            self.passwordAlarmLabel.textColor = isValid ? .green : .lightGray
             
         }).disposed(by: dispodeBag)
     }
 }
+

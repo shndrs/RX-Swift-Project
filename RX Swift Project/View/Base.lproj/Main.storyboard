@@ -18,6 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f1 Login copy" translatesAutoresizingMaskIntoConstraints="NO" id="4cP-Iv-PJV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lje-31-qq2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="FH3-E7-L3W">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bpr-fM-ugy">
                                 <rect key="frame" x="37.666666666666657" y="284.33333333333331" width="300" height="243.33333333333331"/>
                                 <subviews>
@@ -38,7 +49,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMc-dd-qHw">
                                 <rect key="frame" x="133.66666666666666" y="679" width="108" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
-                                <state key="normal" title="Select a Car"/>
+                                <state key="normal" title="Select a Car">
+                                    <color key="titleColor" red="0.97818644659999998" green="0.2395347253" blue="0.35358815510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="selectCarPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kGN-qO-FOm"/>
                                 </connections>
@@ -46,11 +59,19 @@
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Lje-31-qq2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Tv-Ob-Jdy"/>
                             <constraint firstItem="Bpr-fM-ugy" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="4Uh-pa-AWY"/>
+                            <constraint firstItem="4cP-Iv-PJV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9ai-gZ-xKO"/>
+                            <constraint firstAttribute="bottom" secondItem="4cP-Iv-PJV" secondAttribute="bottom" id="AuB-uD-pCj"/>
                             <constraint firstItem="Bpr-fM-ugy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="H2g-lK-DNl"/>
                             <constraint firstItem="Bpr-fM-ugy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="JP0-K6-4u8"/>
+                            <constraint firstAttribute="bottom" secondItem="Lje-31-qq2" secondAttribute="bottom" id="NLR-Ge-iOZ"/>
                             <constraint firstItem="Bpr-fM-ugy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XG0-3s-v8e"/>
+                            <constraint firstItem="4cP-Iv-PJV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YPh-my-9tT"/>
+                            <constraint firstItem="4cP-Iv-PJV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="faY-Y6-Teh"/>
+                            <constraint firstItem="Lje-31-qq2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gJ6-yG-lWQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gMc-dd-qHw" secondAttribute="bottom" constant="64" id="npg-XZ-F0Z"/>
+                            <constraint firstItem="Lje-31-qq2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nqZ-g9-lzO"/>
                             <constraint firstItem="gMc-dd-qHw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xIC-ha-cmq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -63,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2018.4000000000001" y="133.00492610837438"/>
+            <point key="canvasLocation" x="1889" y="132"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="iiO-bW-jez">
@@ -151,9 +172,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eOg-iW-zXh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2695.1999999999998" y="133.74384236453201"/>
+            <point key="canvasLocation" x="2622" y="132"/>
         </scene>
-        <!--Formula One Login RX-->
+        <!--Formula One RX-->
         <scene sceneID="chv-Ke-NRR">
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" id="7ZQ-jE-gtj" customClass="LoginViewController" customModule="RX_Swift_Project" customModuleProvider="target" sceneMemberID="viewController">
@@ -191,7 +212,7 @@
                                         <rect key="frame" x="0.0" y="62" width="300" height="46"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -200,9 +221,9 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oP3-q8-ZXS">
                                 <rect key="frame" x="37.666666666666657" y="492" width="300" height="46"/>
-                                <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Login">
+                                <color key="backgroundColor" red="0.0" green="0.67603546110000001" blue="0.15388117439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="Submit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -210,9 +231,18 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="7ZQ-jE-gtj" eventType="touchUpInside" id="zai-0f-LRP"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XC3-hV-WAc">
-                                <rect key="frame" x="187.66666666666666" y="570" width="0.0" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wwerwer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XC3-hV-WAc">
+                                <rect key="frame" x="157.33333333333334" y="570" width="60.333333333333343" height="17.666666666666629"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.97818644659999998" green="0.2395347253" blue="0.35358815510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wwerwer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMl-LS-vx0">
+                                <rect key="frame" x="157.33333333333334" y="595.66666666666663" width="60.333333333333343" height="17.666666666666629"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" red="0.97818644659999998" green="0.2395347253" blue="0.35358815510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -236,19 +266,22 @@
                             <constraint firstItem="oP3-q8-ZXS" firstAttribute="width" secondItem="loG-wd-3ei" secondAttribute="width" id="fN6-ZN-i7g"/>
                             <constraint firstItem="oP3-q8-ZXS" firstAttribute="centerX" secondItem="TFT-sU-M8w" secondAttribute="centerX" id="gbM-Wu-5Rt"/>
                             <constraint firstItem="XSQ-BI-gpv" firstAttribute="trailing" secondItem="gBK-LZ-jgy" secondAttribute="trailing" id="grJ-gw-yq6"/>
+                            <constraint firstItem="UMl-LS-vx0" firstAttribute="centerX" secondItem="TFT-sU-M8w" secondAttribute="centerX" id="hFA-RT-3Sr"/>
                             <constraint firstAttribute="bottom" secondItem="G0Y-p1-dHh" secondAttribute="bottom" id="hxF-bB-VBg"/>
                             <constraint firstItem="G0Y-p1-dHh" firstAttribute="trailing" secondItem="gBK-LZ-jgy" secondAttribute="trailing" id="lvT-8b-KFh"/>
                             <constraint firstItem="oP3-q8-ZXS" firstAttribute="height" secondItem="loG-wd-3ei" secondAttribute="height" id="paM-Fw-iSg"/>
+                            <constraint firstItem="UMl-LS-vx0" firstAttribute="top" secondItem="XC3-hV-WAc" secondAttribute="bottom" constant="8" id="q6t-WX-Oau"/>
                             <constraint firstItem="G0Y-p1-dHh" firstAttribute="top" secondItem="TFT-sU-M8w" secondAttribute="top" id="rWW-rf-Nam"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gBK-LZ-jgy"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Formula One Login RX" id="O09-kn-BLJ"/>
+                    <navigationItem key="navigationItem" title="Formula One RX" id="O09-kn-BLJ"/>
                     <connections>
-                        <outlet property="alarmLabel" destination="XC3-hV-WAc" id="bhE-R0-vD5"/>
                         <outlet property="loginButton" destination="oP3-q8-ZXS" id="ePG-Sa-wTe"/>
+                        <outlet property="passwordAlarmLabel" destination="UMl-LS-vx0" id="VFs-Qg-gRc"/>
                         <outlet property="passwordTF" destination="loG-wd-3ei" id="HuN-VC-d2O"/>
                         <outlet property="userNameTF" destination="eyT-fC-5bc" id="MoV-wP-BQQ"/>
+                        <outlet property="usernameAlarmLabel" destination="XC3-hV-WAc" id="QoB-2B-27Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4up-m7-Waa" userLabel="First Responder" sceneMemberID="firstResponder"/>
