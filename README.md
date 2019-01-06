@@ -10,7 +10,7 @@ Then we select the car that we want and press Back Button or RX Example if you w
 
 ![rx2](https://user-images.githubusercontent.com/34839080/50446142-8f5ba300-0928-11e9-9010-ad4750915977.png)
 
-and finally the team that we choosed from previous step will showed up at very first ViewController
+and finally the team that we choosed from previous step will showed up at very first ViewController( obviously you wanna choose Ferrari 😁😁)
 
 ![rx3](https://user-images.githubusercontent.com/34839080/50446143-91bdfd00-0928-11e9-93c7-0d94dde5c1b5.png)
 
